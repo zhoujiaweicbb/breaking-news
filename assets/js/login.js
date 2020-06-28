@@ -49,7 +49,8 @@ $('#form_reg').on('submit',function(e){
     })
 })
 
-//监听登录表单的提交事件
+// 监听登录表单的提交事件
+// 箭头函数里面没有this，往哪儿找，网上一级作用域里查找
 $('#form_login').submit(function(e){
     //阻止默认提交行为
     e.preventDefault()
