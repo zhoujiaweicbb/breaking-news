@@ -46,8 +46,16 @@ $.ajax({
     }
     layer.msg('更新用户信息成功！')
     //调用父页面中的方法，重新渲染用户的头像的用户的信息
+
+//父亲身上所有属性和方法都能使用window.parent
+//iframe跨域
     window.parent.getUserInfo()
   }
 })
 })
 })
+
+//options.url 字符串‘/api‘’/my’
+// indexOf('/api') !==-1返回的是当前字符串所在的索引位置
+// startsWith / endsWith 用来判断当前某个字符或者字符串在哪个位置 开始/结束 返回的是布尔值
+// includes用来判断当前某个字符或者字符串是否出现目标字符串里面 返回的布尔值
